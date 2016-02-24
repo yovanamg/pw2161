@@ -1,0 +1,10 @@
+/*etiquetas, identificadores, clases, pseudoelementos/En orden alfabetico*/
+body
+{
+	/*atributos:valor;*/
+	background: rgb(255,255,255); /*fondo*/
+	color: #000000; /*letra*/
+	margin: 0 auto; /*margen externo caja principal*/
+	max-width: 1024px; /*ancho de pantalla(máximo)*/
+	/*padding: margen internos*/
+}
