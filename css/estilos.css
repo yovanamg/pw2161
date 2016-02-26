@@ -12,13 +12,23 @@ body
 body header
 {
 	background:  hotpink; /*fondo*/
+	box-shadow: 5px 5px black; /*sombras*/
 	border: 1px solid black; /*borde normal*/
 	border-radius: 5px; /*bordes redondeados*/
 	color: white; /*letras*/
 }
 
+header img
+{
+	float: right; /*mover hacia la derecha*/
+	margin-right: 20px;/*mover hacia la izq*/
+	margin-top: 20px; /*mover hacia abajo*/
+	width: 80px; /*tamaño imagen*/
+}
+
 header h1
 {
+	text-shadow: 5px 5px 10px black; /*sombra ala letra*/
 	text-align: center; /*solo afectamos al h1*/
 }
 
@@ -27,9 +37,10 @@ header nav ul li
 	/*border: 1px solid yellow;*/
 	background: white;
 	border-radius: 5px;
+	box-shadow: -5px -5px beige; /*sombras*/
 	color: black;
 	display: inline-block; /*rompe caja*/
-	margin: 0px 50px;
+	margin: 0px 30px;
 	padding: 10px;
 }
 
@@ -37,4 +48,20 @@ header nav ul li:hover
 {
 	background: black;
 	color: white;
+}
+
+/*aqui van los id´s*/
+
+#seccion1 
+{
+	border: 10px solid pink;
+}
+
+#seccion1 article
+{
+	border: 10px solid beige;
+	display: inline-block;
+	vertical-align: top; /*alinear la caja verticalmente desde arriba*/
+	width: 47.8%;
+
 }
