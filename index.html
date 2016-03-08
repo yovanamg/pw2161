@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Primer Página HTML5</title>
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header> 	<!-- Encabezado -->
 		<img  src="img/logo.png" alt="">
-		<h1>Mi Aplicacion</h1>  <!--Etiquerata Semantica / Un solo uso -->
+		<h1>
+			<span class="icon-home">
+				Mi Aplicación
+			</span>
+		</h1>  <!--Etiquerata Semantica / Un solo uso -->
 		<!-- h2 .. H6 Subtitulos -->
 	<nav> <!-- Menu de Navegacion -->
 		<ul>
@@ -43,6 +48,22 @@
 	<!-- Texto libre, si. Más no deben de usarlo en pocas ocasiones. -->
 	<article>
 		<!-- Si se puede utilizar artículos sin seccion. se recomienda la secciones y si vas a poner solo artículos, mejor que sean secciones. -->
+		HTML5
+		<form action="">
+			Escribe algo aquí <br>
+			<input type="password" required placeholder="Escribe algo aquí" size=8 maxlength=8 autofocus>
+			<input type="date" required> <br>
+			<input type="number" required max=10 min=0 value=0>
+			<input type="radio" name="genero" value="femenino"> Femenino
+			<input type="radio" name="genero" value="masculino"> Masculino
+			<input type="radio" name="genero" values="otro"> otro <br>
+			<select name="genero2" id="">
+				<option value="">Femenino</option>
+			    <option value="">Masculino</option>
+			    <option value="">Otro</option>
+		    </select>
+		    <input type="submit" required>
+		</form>
 	</article>
 	</main> 
 	<footer>

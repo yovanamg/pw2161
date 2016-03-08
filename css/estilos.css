@@ -28,6 +28,7 @@ header img
 
 header h1
 {
+	font-family: 'Open Sans', sans-serif;
 	text-shadow: 5px 5px 10px black; /*sombra ala letra*/
 	text-align: center; /*solo afectamos al h1*/
 }
@@ -59,6 +60,7 @@ header nav ul li:hover
 
 #seccion1 article
 {
+	font-family: 'PT Sans', sans-serif;
 	border: 10px solid beige;
 	display: inline-block;
 	vertical-align: top; /*alinear la caja verticalmente desde arriba*/
