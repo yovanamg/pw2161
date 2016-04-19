@@ -6,28 +6,43 @@ body
 	font-size: 16px;
 }
 
-h1
-{
-	text-align: center;
-}
-
 table
 {
 	margin: 0 auto;
 	border-collapse: collapse;
+	
 }
 
+table tr td
+{
+	width: 50px;
+	padding: 5%;
+}
+
+table tr td input
+{
+	border-style: none;
+	background: none;
+}
+
+#t
+{
+	text-align: center;
+	color: gray;
+}
 
 #t12,#t22,#t32
 {
- border-left: 2px solid red;
- border-right: 2px solid red;
+ border-left: 2px solid hotpink;
+ border-right: 2px solid hotpink;
 }
 
-.borderAb
+#t21,#t22,#t23
 {
-	border-bottom: 2px solid red;
+	border-top: 2px solid hotpink;
+	border-bottom: 2px solid hotpink;
 }
+
 
 
 
