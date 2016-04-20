@@ -2,7 +2,6 @@ body
 {
 	margin: 0 auto;
 	max-width: 1024px;
-	border: 2px solid green;
 	font-size: 16px;
 }
 
@@ -10,7 +9,6 @@ table
 {
 	margin: 0 auto;
 	border-collapse: collapse;
-	
 }
 
 table tr td
@@ -23,12 +21,14 @@ table tr td input
 {
 	border-style: none;
 	background: none;
+	width: 100%;
 }
 
-#t
+form
 {
 	text-align: center;
 	color: gray;
+	border: 1px solid black;
 }
 
 #t12,#t22,#t32
