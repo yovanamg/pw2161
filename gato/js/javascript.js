@@ -1,4 +1,5 @@
 var bandera = true;
+var cont = 0;
 
 function clic(nombre)
 { 
@@ -104,29 +105,30 @@ var s32 = document.getElementById("n32").value;
 var s33 = document.getElementById("n33").value;
 var win=[s11,s12,s13,s21,s22,s23,s31,s32,s33];
 
-if(win[s11],[s12],[s13]=="X")
+var empate = true;
+cont++;
+if(empate == true)
 {
-	alert("ganaste! yujuuu :D")
-}
-else
-{
-	if(win[s11],[s12],[s13]=="O")
+   if(((s11+s12+s13)=="XXX")||((s21+s22+s23)=="XXX")||((s31+s32+s33)=="XXX")||((s11+s22+s33)=="XXX")||((s13+s22+s31)=="XXX")||((s11+s21+s31)=="XXX")||((s12+s22+s32)=="XXX")||((s13+s23+s33)=="XXX"))
+   {
+	alert("GANADOR X");
+	empate = false;
+	location.reload();
+   }
+   if(((s11+s12+s13)=="OOO")||((s21+s22+s23)=="OOO")||((s31+s32+s33)=="OOO")||((s11+s22+s33)=="OOO")||((s13+s22+s31)=="OOO")||((s11+s21+s31)=="OOO")||((s12+s22+s32)=="OOO")||((s13,s23+s33)=="OOO"))
+   {
+	alert("GANADOR O");
+	empate = false;
+	location.reload();
+   }
+   if(cont == 9)
 	{
-		alert("Ganaste con O")
+	alert("Empate");
 	}
-	
 }
 
-if(win[s21],[s22],[s23]=="X")
-{
-	alert("ganaste! yujuuu :D lina 2")
-}
-else
-{
-	if(win[s21],[s22],[s23]=="O")
-	{
-		alert("Ganaste con O linea 2")
-	}
 	
-}
+
+
+
 }
