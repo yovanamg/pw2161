@@ -102,8 +102,31 @@ var s23 = document.getElementById("n23").value;
 var s31 = document.getElementById("n31").value;
 var s32 = document.getElementById("n32").value;
 var s33 = document.getElementById("n33").value;
-var win[s11,s12,s13,s21,s22,s23,s31,s32,s33];
+var win=[s11,s12,s13,s21,s22,s23,s31,s32,s33];
 
-if((win[0,1,2]||win[3,4,5]||win[6,7,8]=="X"))
+if(win[s11],[s12],[s13]=="X")
+{
+	alert("ganaste! yujuuu :D")
+}
+else
+{
+	if(win[s11],[s12],[s13]=="O")
+	{
+		alert("Ganaste con O")
+	}
+	
+}
 
+if(win[s21],[s22],[s23]=="X")
+{
+	alert("ganaste! yujuuu :D lina 2")
+}
+else
+{
+	if(win[s21],[s22],[s23]=="O")
+	{
+		alert("Ganaste con O linea 2")
+	}
+	
+}
 }
