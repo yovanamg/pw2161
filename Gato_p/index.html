@@ -6,13 +6,14 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/javascript.js"> </script>
 </head>
-<body>
+<body onload="iniciaGato();" unload="">
 	<header>
 		<h1 id="tituloJuego">Juego del Gato</h1>
 	</header>
 	<section>
 		<article>
 			<form action="#" name="juegoGato">
+				<table>
 				<tr>
 					<td onclick="escribe(this.id);" id="n11">&nbsp;</td>
 					<td onclick="escribe(this.id);" id="n12">&nbsp;</td>
@@ -28,6 +29,7 @@
 					<td onclick="escribe(this.id);" id="n32">&nbsp;</td>
 					<td onclick="escribe(this.id);" id="n33">&nbsp;</td>
 				</tr>
+			</table>
 			</form>
 		</article>
 	</section>

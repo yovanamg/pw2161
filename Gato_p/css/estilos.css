@@ -3,7 +3,6 @@ body
 	font-size: 16px;
 	margin: 0 auto;
 	max-width: 1024px;
-	border: 1px solid green;
 }
 
 header
@@ -14,6 +13,14 @@ header
 section article table
 {
 	border-collapse: collapse;
+	font-size: 5em;
+	margin: 0 auto;
+}
+
+section article table td
+{
+	text-align: center;
+	width: 100px;
 }
 
 
@@ -28,7 +35,7 @@ section article table
 	border-bottom: 8px solid red;
 }
 
-#n32,#n32
+#n31,#n32
 {
 	border-right: 8px solid red;
 }
