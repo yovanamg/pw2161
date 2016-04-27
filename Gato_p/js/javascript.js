@@ -6,7 +6,7 @@ var cuentaJugadas = 0;
 function iniciaGato()
 {
 	//preguntar si el navegagor es compatible con localStorage
-	if(typeof(Storage) != "unidefined")
+	if(typeof(Storage) != "undefined")
 	{
 		if(localStorage.webCuentaJuego)
 		{
