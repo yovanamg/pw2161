@@ -5,6 +5,12 @@ body
 	max-width: 1024px;
 }
 
+h1
+{
+	text-align: center;
+	color: ;
+}
+
 header nav
 {
 	display: none;
@@ -14,6 +20,9 @@ header nav
 header nav ul li 
 {
 	display: inline-block;
+}
+header nav ul li button
+{
 	width: 89px;
 }
 
