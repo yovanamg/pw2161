@@ -17,6 +17,7 @@ var iniciaApp = function()
 			alert("La clave no debe ser vacío");
 			$("#txtClave").focus();
 		}
+
 		//2. verificar usuario y contraseña
 		//if(usuario=="pw" && clave=="1234")
 		//{
@@ -28,7 +29,7 @@ var iniciaApp = function()
 		//else
 		//	alert("Usuario y/o contraseña incorrecta(s)");
 
-		var parametros = "action=validaEntrada"+
+		var parametros = "accion=validaEntrada"+
 						"&usuario="+usuario+
 						"&clave="+clave+
 						"&id="+Math.random(); //para que no utilice cache!!!		
@@ -39,10 +40,18 @@ var iniciaApp = function()
 			cache: false,
 			type: "POST",
 			dateType: "json",
-			url: "php/funciones.php"
+			url: "php/funciones.php",
 			data: parametros,
-			sucess: function(response){
-
+			success: function(response){
+				if (response.respuesta == true) 
+					{
+						$("#datosUsuario").hide();
+						$("nav").show("slow");
+					}
+					else
+						{
+							alert("Usuario/Contraseña Incorrecto(s)");
+						}
 			},
 			error: function(xhr,ajaxOptions, thrownError){
 				console.log("Algo salio mal");
