@@ -31,7 +31,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 function ValidarEntrada()
 {
 	$usuario = GetSQLValueString($_POST["usuario"],"text");
-	$clave = GetSQLValueString(md5($_POST["clave"]),"text");
+	$clave = GetSQLValueString (md5($_POST["clave"]),"text");
 	$respuesta = false;
 
 	//conexion al servidor de BD
@@ -44,7 +44,7 @@ function ValidarEntrada()
 	//preguntamos si se trajo un registro
 	if(mysql_num_rows($resultado) > 0)
 		$respuesta = true;
-	$salidaJSON = array('respuesta' => $respuestas);
+	$salidaJSON = array('respuesta' => $respuesta);
 	//devolvemos el resultado al JS
 	print json_encode($salidaJSON);
 }
@@ -53,8 +53,8 @@ $accion = $_POST["accion"];
 
 //Menu principal
 switch ($accion) {
-	case 'ValidarEntrada':
-		validaEntrada();
+	case 'validarEntrada':
+		validarEntrada();
 		break;
 	
 	default:

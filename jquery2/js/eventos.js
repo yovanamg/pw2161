@@ -29,17 +29,17 @@ var iniciaApp = function()
 		//else
 		//	alert("Usuario y/o contraseña incorrecta(s)");
 
-		var parametros = "accion=validaEntrada"+
+		var parametros = "accion=validarEntrada"+
 						"&usuario="+usuario+
 						"&clave="+clave+
 						"&id="+Math.random(); //para que no utilice cache!!!		
 		$.ajax({
-			beforeSend: function(){
+			beforeSend:function(){
 				console.log("Validar al Usuario");
 			},
 			cache: false,
 			type: "POST",
-			dateType: "json",
+			dataType: "json",
 			url: "php/funciones.php",
 			data: parametros,
 			success: function(response){
@@ -56,7 +56,7 @@ var iniciaApp = function()
 			error: function(xhr,ajaxOptions, thrownError){
 				console.log("Algo salio mal");
 			}
-		})
+		});
 		console.log("Se disparó el submit");
 	}
 	$("#frmValidaEntrada").on("submit",ValidarEntrada);
