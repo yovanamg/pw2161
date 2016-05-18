@@ -14,7 +14,7 @@
 		<nav>
 			<ul>
 				<li> <button class="btn btn-default">Inicio</button></li>
-				<li><button class="btn btn-primary">Altas</button></li>
+				<li><button id="btnAltas" class="btn btn-primary">Altas</button></li>
 				<li><button class="btn btn-success">Bajas</button></li>
 				<li><button class="btn btn-warning">Cambios</button></li>
 				<li><button class="btn btn-danger">Consultas</button></li>
@@ -40,17 +40,17 @@
 			</article>
 		</section>
 		<section>
-			<article id="altaUsuarios" class="panel panel-info">
+			<article id="altaUsuarios" >
 				<h2>Alta de Usuarios</h2>
 				<form action="#" id="frmAltaUsuarios" name="frmAltaUsuarios">
 					<input type="text" class="form-control" id="txtNombreUsuario" placeholder="Usuario" name="txtNombreUsuario" requeride>
 					<input type="password" class="form-control" id="txtClaveUsuario" placeholder="Clave" name="txtClaveUsuario" requeride>
-					<select name="txtNombreUsuario" id="txtNombreUsuario" class="form-control">
+					<select name="txtTipoUsuario" id="txtTipoUsuario" class="form-control" >
 						<option value="vigente">Vigente</option>
 						<option value="baja">Baja</option>
 					</select>
 					<input type="text" class="form-control" id="txtDpto" name="txtDpto" placeholder="Departamento" required>
-					<input type="submit" id="btnAltaUsuario" name="btnAltaUuario" class="btn btn-success btn-lg btn-block" required>
+					<input type="submit" id="btnAltaUsuario" name="btnAltaUsuario" class="btn btn-success btn-lg btn-block" required>
 				</form>
 			</article>
 		</section>

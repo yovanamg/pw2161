@@ -49,6 +49,29 @@ function ValidarEntrada()
 	print json_encode($salidaJSON);
 }
 
+function guardaUsuario()
+{
+	$usuario = GetSQLValueString ($_POST["txtNombreUsuario"],"text");
+	$clave = GetSQLValueString (md5($_POST["txtClaveUsuario"]),"text");
+	$tipo = GetSQLValueString ($_POST["txtTipoUsuario"],"text");
+	$depto = GetSQLValueString ($_POST["txtDepto"],"long");
+	$respuesta = false;
+
+	//conexion al servidor de BD
+	//servidor, usuario, contraseña
+	$conexion = mysql_connect("localhost","root","");
+	//selecion de la BD
+	mysql_select_db("cursopw");
+	$guarda = sprintf("insert into usuarios values(%s,%s,%s,%d",$usuario,$clave,$tipo,$depto);
+		if(mysql_affected_rows() > 0)
+		{
+			$respuesta = true;
+		}
+		$salidaJSON = $arrayName = array('respuesta' => $respuesta);
+		print json_encode($salidaJSON);
+}
+
+
 $accion = $_POST["accion"];
 
 //Menu principal
