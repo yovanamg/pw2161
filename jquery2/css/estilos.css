@@ -1,31 +1,29 @@
-body 
+body
 {
 	font-size: 16px;
 	margin: 0 auto;
 	max-width: 1024px;
 }
-
-h1,h2
-{
-	text-align: center;
-}
-
 header nav
 {
 	display: none;
 	text-align: center;
 }
 
-header nav ul li 
+h1,h1,h3
 {
-	display: inline-block;
+	text-align: center;
+}
+header nav ul li
+{
+	display: inline-block;	
 }
 header nav ul li button
 {
 	width: 89px;
 }
 
-#altaUsuarios,#consultaUsuarios
+#altaUsuarios,#consultasUsuarios
 {
 	display: none;
 	margin: 0 auto;
@@ -37,6 +35,3 @@ header nav ul li button
 	margin: 0 auto;
 	width: 320px;
 }
-
-
-
